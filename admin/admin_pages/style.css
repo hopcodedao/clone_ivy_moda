@@ -1,0 +1,351 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header>a>h1 {
+    text-align: center;
+    border-bottom: 1px solid ;
+    padding: 15px 0;
+}
+ul {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.admin-content {
+    display: flex;
+    gap: 10px;
+}
+.admin-content-left {
+    width: 250px;
+}
+.admin-content-right {
+    background-color: #f2edf3;
+    width: 100%;
+    padding: 20px;
+}
+.admin-content-left-list>li>a {
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.admin-content-left-list>li>a>i{
+    font-size: 16px;
+}
+.admin-content-left-list>li {
+    position: relative;
+}
+
+ul li a{
+    padding: 18px 36px;
+    display: block;
+    transition: all 0.2s;
+}
+ul li a:hover {
+    background-color: #fcfcfc;
+}
+.sub_menu li a:hover {
+    color: red;
+}
+li>ul {
+    padding-left: 20px;
+    display: none;
+}
+
+
+.sub_menu.active_drop_down {
+    display: block;
+}
+.admin-header {
+    display: flex;
+    height: 70px;
+    align-items: center;
+
+}
+.admin-header-left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 250px;
+    padding: 15px;
+}
+.menu_top_right {
+    display: flex;
+    align-items: center;
+}
+.admin-header-left-logo {
+    display: flex;
+    justify-content: center;
+}
+.admin-header-left-logo img {
+    width: 70%;
+}
+.admin-header-right {
+    flex:1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 20px;
+}
+.admin-header-right>div:last-child {
+    display: flex;
+    align-items: center;
+}
+.user_image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+.hello, .admin-header-right>div:first-child a{
+    font-weight: bold;
+    color: #000;
+}
+
+/* thêm danh mục  */
+form>input {
+    height: 30px;
+    width: 200px;
+    padding-left: 12px;
+    margin-top: 10px;
+}
+input[type="file"] {
+    padding: 0;
+  }
+form>button {
+    display: block;
+    margin-top: 10px;
+    height: 30px;
+    width: 100px;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    color: brown;
+    transition: all 0.2s linear;
+    font-weight: bold;
+    border: 2px solid brown;
+} 
+form>button:hover {
+    background-color: brown;
+    color: white;
+}
+
+table tr th {
+    font-size: 14px;
+    padding:4px;
+}
+/* danh sách danh mục  */
+table {
+    width: 100%;
+    border-spacing: 0;
+    margin-right: 20px;
+}
+th,td {
+    padding: 5px 0;
+    text-align: center;
+}
+td>a:hover {
+    color: red;
+}
+
+/* loại sản phẩm  */
+.admin-content-right-cartegory_add form select {
+    margin-top: 20px;
+    height: 30px;
+    width: 200px;
+    padding-left: 12px;
+    border: 1px solid #ddd;
+}
+.admin-content-right-cartegory_add form input {
+    margin-top: 10px;
+}
+ /* loại sản phẩm con  */
+ .admin-content-right-cartegory_add form select {
+    margin: 10px 0;
+    height: 30px;
+    width: 200px;
+    padding-left: 12px;
+    border: 1px solid #ddd;
+    display: block;
+}
+.admin-content-right-cartegory_add form input {
+    margin-top: 10px;
+}
+.user_image {
+    font-size: 20px;
+    margin-right: 10px;
+}
+.exit_admin:hover {
+    color: red;
+}
+/* Thêm sản phẩm  */
+.admin-content-right-product_add form input,select{
+    display: block;
+    height: 30px;
+    width: 300px;
+}
+.admin-content-right-product_add form  textarea {
+    display: block;
+    width: 700px;
+    height: 150px;
+    padding-left: 4px;
+    padding-top: 4px;
+}
+.admin-content-right-product_add form label {
+    margin-top: 6px;
+    display: block;
+    margin-bottom: 4px;
+}
+.admin-content-right-product_add form button {
+    display: block;
+    margin-top: 10px;
+    height: 30px;
+    width: 100px;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    color: brown;
+    transition: all 0.2s linear;
+    font-weight: bold;
+    border: 2px solid brown;
+}
+.admin-content-right-product_add form button:hover {
+    background-color: brown;
+    color: white;   
+} 
+/* Thông báo thêm thành công */
+.notification {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 250px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 10px;
+    display: none;
+    
+}
+.notification.show{
+    display: flex;
+}
+
+.cartegory-right-botton-items {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0 ;
+    gap: 15px;
+}
+
+.cartegory-right-botton-items>li>a {
+    border: 1px solid #ccc;
+    padding: 7px 12px;
+    border-top-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    font-size: 14px;
+    display: block;
+    color: #000;
+    transition: all 0.2s;
+}
+.disabled{
+    border: 1px solid #ccc;
+    padding: 7px 12px;
+    border-top-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    font-size: 14px;
+    display: block;
+    color: #000;
+    transition: all 0.2s;
+}
+.pagination.active{
+    background-color: #000;
+    color: #fff;
+}
+.cartegory-right-botton-items>li>a:hover {
+    background-color:#000;
+    color: #fff;
+}
+
+/* Sắp xếp sản phẩm theo thứ tự và search  */
+.filter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+.form-search {
+    display: flex;
+}
+.filter select {
+    width: 200px;
+}
+.filter_right {
+    display: flex;
+    align-items: center;
+}
+.filter_right span{
+    margin-right: 5px;
+    font-weight: 600;
+}
+.btn-filter {
+    margin-left: 10px;
+    width: 70px;
+}
+
+/* intro  */
+.icon-counting {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    margin-top: 20px;
+}
+.number_item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #fff;
+    
+}
+.number-item-img {
+    width: 90px;
+    height: 90px;
+}
+.number-item-img>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.number-item-counter {
+    width: 180px;
+    background-color: #fff;
+    height: 90px;
+    padding: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.counter {
+    font-weight: bold;
+}
+/* chart  */
+#myChart {
+    margin-top: 50px;
+}
+
+/* ckeditor  */
+.ck-editor__editable[role="textbox"] {
+    /* editing area */
+    min-height: 200px;
+    margin-bottom: 40px;
+}
+.ck-rounded-corners {
+    width: 700px;
+}
+.ck.ck-toolbar.ck-toolbar_grouping {
+    width: 700px;
+}
